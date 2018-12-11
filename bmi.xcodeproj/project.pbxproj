@@ -11,8 +11,8 @@
 		ACB5803C21BFB19500D520B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5803B21BFB19500D520B9 /* ViewController.swift */; };
 		ACB5803F21BFB19500D520B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB5803D21BFB19500D520B9 /* Main.storyboard */; };
 		ACB5804121BFB19900D520B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB5804021BFB19900D520B9 /* Assets.xcassets */; };
-		ACB5804C21BFC57600D520B9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5804B21BFC57600D520B9 /* Model.swift */; };
 		ACB5804E21BFC5A100D520B9 /* Animated.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5804D21BFC5A100D520B9 /* Animated.swift */; };
+		ACF7DCEB21BFD75200B36698 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7DCEA21BFD75200B36698 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +22,8 @@
 		ACB5803E21BFB19500D520B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACB5804021BFB19900D520B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACB5804521BFB19900D520B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACB5804B21BFC57600D520B9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		ACB5804D21BFC5A100D520B9 /* Animated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animated.swift; sourceTree = "<group>"; };
+		ACF7DCEA21BFD75200B36698 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Model.swift; path = ../Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +56,9 @@
 		ACB5803821BFB19500D520B9 /* bmi */ = {
 			isa = PBXGroup;
 			children = (
-				ACB5803921BFB19500D520B9 /* AppDelegate.swift */,
+				ACF7DCEA21BFD75200B36698 /* Model.swift */,
 				ACB5803B21BFB19500D520B9 /* ViewController.swift */,
-				ACB5804B21BFC57600D520B9 /* Model.swift */,
+				ACB5803921BFB19500D520B9 /* AppDelegate.swift */,
 				ACB5804D21BFC5A100D520B9 /* Animated.swift */,
 				ACB5803D21BFB19500D520B9 /* Main.storyboard */,
 				ACB5804021BFB19900D520B9 /* Assets.xcassets */,
@@ -138,9 +138,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACB5804E21BFC5A100D520B9 /* Animated.swift in Sources */,
-				ACB5804C21BFC57600D520B9 /* Model.swift in Sources */,
 				ACB5803C21BFB19500D520B9 /* ViewController.swift in Sources */,
 				ACB5803A21BFB19500D520B9 /* AppDelegate.swift in Sources */,
+				ACF7DCEB21BFD75200B36698 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

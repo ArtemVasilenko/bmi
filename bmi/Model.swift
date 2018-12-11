@@ -2,7 +2,8 @@
 import Foundation
 import UIKit
 
-class TupButton: ViewController {
+
+
     
     
     func tup() {
@@ -57,6 +58,6 @@ class TupButton: ViewController {
         }
     }
     
-}
+
 
 
