@@ -1,8 +1,9 @@
 
 import UIKit
+import Foundation
 
-var bmi = Bmi.init(height: 0, weight: 0)
-
+private var bmi = BmiCalc.init(height: 0, weight: 0)
+private var alert = Alarm()
 
 class ViewController: UIViewController {
     
@@ -13,19 +14,26 @@ class ViewController: UIViewController {
     
     
     
+    
     override func viewDidLoad() {
         etHeight.keyboardAppearance = .dark
         etWeight.keyboardAppearance = .dark
     }
     
     
+    
     @IBAction func generateBmi(_ sender: UIButton) {
         bmi.height = Double(etHeight.text ?? "0") ?? 0
         bmi.weight = Double(etWeight.text ?? "0") ?? 0
         sender.pulsate()
-        result.text = bmi.bmiCalc()
+        
+        
+        if bmi.weight != 0 || bmi.height != 0 {
+            result.text = bmi.bmiCalc()
+        } else {
+            alert.alarm()
+            self.present(alert.allertController, animated: true, completion: nil)
+        }
     }
-    
-    
 }
 
