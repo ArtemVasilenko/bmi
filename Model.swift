@@ -2,10 +2,12 @@
 import Foundation
 
 protocol Bmi {
+    var height: Double {get}
+    var weight: Double {get}
     func bmiCalc () -> String
 }
 
-class BmiCalc: Bmi {
+struct BmiCalc: Bmi {
     var height: Double
     var weight: Double
     
@@ -14,10 +16,12 @@ class BmiCalc: Bmi {
         self.weight = weight
     }
     
+    let alert = Alarm()
     
     func bmiCalc () -> String {
         let bmi = (weight/((height/100.00)*(height/100.00)))
-       // if weight != 0 || height != 0 {
+        
+        if weight != 0 || height != 0 {
             switch bmi {
             case 0..<16: return "У Вас выраженный дефицит массы тела"
             case 16..<18.5: return "Недостаточная (дефицит) масса тела"
@@ -28,8 +32,14 @@ class BmiCalc: Bmi {
             case 40...: return "Очень резкое ожирение"
             default: return ""
             }
+        } else {
+            alert.alarm()
+            alert.present()
+            return "error"
+        }
     }
 }
+
 
 
 
